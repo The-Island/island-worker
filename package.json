@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "author": "Island (git://github.com/Islandio)",
+  "name": "island-worker",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Islandio/island-worker.git"
+  },
+  "dependencies": {
+    "island-util": "git+https://island-ebs:i51andghebs@github.com/Islandio/island-util.git#develop",
+    "underscore": "^1.4.4",
+    "underscore.string": "~2.3.1",
+    "step": "0.0.5",
+    "mongish": "^1.0.3",
+    "zmq": "^2.7.0"
+  },
+  "engines": {
+    "node": "~0.10.26"
+  }
+}

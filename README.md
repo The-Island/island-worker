@@ -2,7 +2,7 @@
 
 Installation:
 
-```npm install git+https://island-ebs:i51andghebs@github.com/Islandio/island-worker.git#develop``` (read-only)
+```npm install git+https://island-ebs:i51andghebs@github.com/The-Island/island-worker.git#develop``` (read-only)
 
 Example usage:
 

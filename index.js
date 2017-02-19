@@ -6,7 +6,6 @@
 var http = require('http');
 var Step = require('step');
 var _ = require('underscore');
-_.mixin(require('underscore.string'));
 var db = require('mongish');
 var zmq = require('zmq');
 
@@ -18,7 +17,7 @@ var start = exports.start = function (opts, cb) {
 
     var frontPort = opts.routerPort;
     var backPort = 'ipc:///tmp/queue';
-    
+
     // Create a router and dealer for client messages.
     var frontSock = zmq.socket('router');
     var backSock = zmq.socket('dealer');
@@ -28,7 +27,7 @@ var start = exports.start = function (opts, cb) {
     // Router handling.
     frontSock.bindSync(frontPort);
     frontSock.on('message', function () {
-      
+
       // Inform server.
       backSock.send(Array.prototype.slice.call(arguments));
     });
